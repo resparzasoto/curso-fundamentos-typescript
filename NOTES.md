@@ -53,3 +53,31 @@ Es un super-conjunto tipado de JavaScript
 
 - Podemos navegar fácilmente por el código
 - Podemos hacer un refactor del código fácilmente
+
+# 2. Entorno de Desarrollo
+
+## El compilador de TypeScript
+
+### Instalación
+
+```bash
+npm install -g typescript
+```
+
+### Usando el compilador tsc
+
+```bash
+tsc hello.ts
+```
+
+Esto generá el transpile del código TypeScript a JavaScript, en un archivo con el mismo nombre con extensión `.js`
+
+### Usando la opción --watch
+
+```bash
+tsc --watch hello.ts
+```
+
+Esto indicará al tsc que esté observando el archivo `hello.ts` compilando nuestro código, cada vez que detecte un cambio.
+
+> *NOTA: Los archivos `.ts` nunca se ejecutarán directamente desde nuestro cliente o nuestro servidor*
