@@ -241,3 +241,10 @@ A partir de ES2015 (ES6)
 - Permiten definir múltiples línea de texto
 - Pueden contener expresiones o variables embebidas
 - Se debe usar el carácter backtick/backquote(`) y para expresiones ${expression}
+
+## Tipo: Any
+
+- Usado para capturar valores dinámicos
+- Los valores pueden cambiar de tipo en el tiempo
+  - APIs externas
+  - Librerías de terceros
