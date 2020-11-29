@@ -167,3 +167,47 @@ package.json
     ...
 }
 ```
+
+# 3. Tipos en TypeScript
+
+## Tipado en TypeScript
+
+- Explícito
+  - Define una sintaxis para la creación de variables con tipo de dato
+- Inferido
+  - TypeScript tiene la habilidad de *"deducir"* el tipo de función de un valor
+
+### Tipado en TypeScript Explícito
+
+```typescript
+nombreVariable : TipoDeDato
+```
+
+El `:` permite especificar el tipo de dato
+
+### Tipado en TypeScript Implícito
+
+```typescript
+nombreVariable = valorInicial
+```
+
+TypeScript deduce el tipo de dato en base a la variable y su valorInicial
+
+### Tipos básicos
+
+Tipos para datos simples en TypeScript
+
+#### Tipos primitivos
+
+- Number
+- Boolean
+- String
+- Array
+- Tuple
+- Enum
+- Any
+- Void
+- Null
+- Undefined
+- Never
+- Object
