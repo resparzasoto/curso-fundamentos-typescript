@@ -48,3 +48,8 @@ Es un super-conjunto tipado de JavaScript
 
 - [Instalar Node.js desde el sitio oficial](https://nodejs.org/es/)
 - [Instalar NVM para Windows](https://github.com/coreybutler/nvm-windows/releases)
+
+## Navegación y Refactoring
+
+- Podemos navegar fácilmente por el código
+- Podemos hacer un refactor del código fácilmente
