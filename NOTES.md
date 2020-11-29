@@ -248,3 +248,30 @@ A partir de ES2015 (ES6)
 - Los valores pueden cambiar de tipo en el tiempo
   - APIs externas
   - Librerías de terceros
+
+## Void y Never
+
+### Tipo: Void
+
+- `void` es lo opuesto de `any`
+- Representa la ausencia de tipo
+- Comúnmente se usa como tipo de retorno en funciones
+
+#### Void como tipo de dato en variable
+
+- Podemos asignar el valor `null` a una variable tipo `void`
+  - En modo strict esto sería un error
+- Podemos asignar el valor `undefined` a una variable tipo `void`
+
+> `null` y `undefined` son una especie de sub-tipos para el tipo `void`
+
+### Tipo: Never
+
+- Representa el tipo de valor que *nunca* ocurre
+  - Funciones que lanzan excepciones
+  - Funciones que nunca retornan valor
+
+#### Casos de uso
+
+- Un function que sea un handleException
+- Un function sea un ciclo infinito
