@@ -128,3 +128,42 @@ $ tsc --project platzi
 ```bash
 $ tsc file.ts
 ```
+
+## Mi primer proyecto TypeScript
+
+- La propiedad `outDir` nos indica la carpeta en donde se guardarán los archivos `.js` transpile
+- La ejecución del compilador buscará por default la carpeta `src/` para transpilar los archivos `.ts`
+
+### Ejecutar archivos `.ts` sin transpilar
+
+Podemos usar una librería que se llama ts-node
+
+```json
+package.json
+
+{
+    "dev": "ts-node index.ts",
+    ...
+}
+```
+
+Directamente en consola con npx
+
+```bash
+npx ts-node index.ts
+```
+
+#### ¿Por qué?
+
+Su caso de uso común es probar que todo funcione antes de traspilar para ahorrar tiempo.
+
+#### Ejemplo con Express
+
+```json
+package.json
+
+{
+    "dev": "nodemon --exec ts-node -- ./server.ts",
+    ...
+}
+```
