@@ -37,3 +37,9 @@ Es un super-conjunto tipado de JavaScript
 - En creciente crecimiento y soporte
 - Puede prevenir cerca del 15% de bugs
 - Se puede utilizar tanto del lado del cliente cómo del servidor
+
+## Instalación de herramientas
+
+- Node.js
+- VSCode
+- nvm (opcional)
