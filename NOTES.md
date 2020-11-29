@@ -61,13 +61,13 @@ Es un super-conjunto tipado de JavaScript
 ### Instalación
 
 ```bash
-npm install -g typescript
+$ npm install -g typescript
 ```
 
 ### Usando el compilador tsc
 
 ```bash
-tsc hello.ts
+$ tsc hello.ts
 ```
 
 Esto generá el transpile del código TypeScript a JavaScript, en un archivo con el mismo nombre con extensión `.js`
@@ -75,9 +75,56 @@ Esto generá el transpile del código TypeScript a JavaScript, en un archivo con
 ### Usando la opción --watch
 
 ```bash
-tsc --watch hello.ts
+$ tsc --watch hello.ts
 ```
 
 Esto indicará al tsc que esté observando el archivo `hello.ts` compilando nuestro código, cada vez que detecte un cambio.
 
 > *NOTA: Los archivos `.ts` nunca se ejecutarán directamente desde nuestro cliente o nuestro servidor*
+
+## El archivo de configuración de TypeScript
+
+### Archivo de Configuración `tsconfig.json`
+
+- Especifica la raíz de un proyecto TypeScript
+- Permite configurar opciones para el compilador
+
+### Generación del archivo `tsconfig.json`
+
+```bash
+$ tsc --init
+```
+
+> Nota: El archivo `tsconfig.json` generado automáticamente tendrá una configuración inicial, así cómo los comentarios explicando las demás configuraciones brevemente.
+
+```json
+tsconfig.json
+
+{
+    "extends": "./configs/base", // Podemos heredar de un archivo de configuración existente
+    "compileOnSave": true, // Podemos configurar que compile al guardar
+    "compilerOptions": {...},// Podemos indicar las opciones al compilar cómo versión de ECMAScript, strict mode, etc.
+    "include": [...], // Podemos configurar las carpetas-archivos a incluir de la compilación
+    "exclude": [...], // Podemos configurar las carpetas-archivos a excluir de la compilación
+}
+```
+
+### Usando el archivo `tsconfig.json`
+
+#### Busca la configuración
+
+```bash
+$ tsc
+```
+
+#### Especifica un directorio que contiene la configuración
+
+```bash
+$ tsc --project platzi
+```
+
+#### Omite la configuración
+
+```bash
+$ tsc file.ts
+```
