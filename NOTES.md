@@ -43,3 +43,8 @@ Es un super-conjunto tipado de JavaScript
 - Node.js
 - VSCode
 - nvm (opcional)
+
+## Instalación de herramientas en Windows
+
+- [Instalar Node.js desde el sitio oficial](https://nodejs.org/es/)
+- [Instalar NVM para Windows](https://github.com/coreybutler/nvm-windows/releases)
