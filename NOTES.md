@@ -183,7 +183,7 @@ package.json
 nombreVariable : TipoDeDato
 ```
 
-El `:` permite especificar el tipo de dato
+El `:` permite especificar el tipo de dato.
 
 ### Tipado en TypeScript Implícito
 
@@ -191,7 +191,7 @@ El `:` permite especificar el tipo de dato
 nombreVariable = valorInicial
 ```
 
-TypeScript deduce el tipo de dato en base a la variable y su valorInicial
+TypeScript deduce el tipo de dato en base a la variable y su valorInicial.
 
 ### Tipos básicos
 
@@ -211,3 +211,33 @@ Tipos para datos simples en TypeScript
 - Undefined
 - Never
 - Object
+
+## Number, Boolean y String
+
+### Tipo: Number
+
+- Valores numéricos
+
+A partir de ES2015 (ES6)
+
+- Valores hexadecimales
+- Valores binarios
+- Valores octales
+
+### Tipo: Boolean
+
+- El tipo de dato más simple en TypeScript
+- Dos únicos valores
+  - true
+  - false
+
+### Tipo: String
+
+- El tipo de dato para trabajar con datos textuales o cadenas
+- Así como en JavaScript, se pueden usar comillas dobles *("")* y simples *('')*
+
+#### Template String
+
+- Permiten definir múltiples línea de texto
+- Pueden contener expresiones o variables embebidas
+- Se debe usar el carácter backtick/backquote(`) y para expresiones ${expression}

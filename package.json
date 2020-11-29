@@ -1,0 +1,22 @@
+{
+  "name": "curso-fundamentos-typescript",
+  "version": "0.1.0",
+  "description": "Curso de Fundamentos de TypeScript",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resparzasoto/curso-fundamentos-typescript.git"
+  },
+  "keywords": [],
+  "author": "@resparzasoto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resparzasoto/curso-fundamentos-typescript/issues"
+  },
+  "homepage": "https://github.com/resparzasoto/curso-fundamentos-typescript#readme"
+}
