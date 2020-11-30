@@ -328,3 +328,9 @@ tsconfig.json
 - Usa dos notaciones
   - `[]`
   - `Array<Type>`
+
+## Tipo: Tuple
+
+- Las tuplas permites expresar un arreglo con un número fijo de elementos
+- Los tipos de datos son conocidos
+- Los tipos de datos de la tupla deben ser diferentes
