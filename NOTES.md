@@ -263,7 +263,7 @@ A partir de ES2015 (ES6)
   - En modo strict esto sería un error
 - Podemos asignar el valor `undefined` a una variable tipo `void`
 
-> `null` y `undefined` son una especie de sub-tipos para el tipo `void`
+> `null` y `undefined` son una especie de subtipos para el tipo `void`
 
 ### Tipo: Never
 
@@ -275,3 +275,38 @@ A partir de ES2015 (ES6)
 
 - Un function que sea un handleException
 - Un function sea un ciclo infinito
+
+## null y undefined
+
+- En TypeScript, ambos *"valores"* tienen sus respectivos tipos:
+  - `null`
+  - `undefined`
+
+### Tipo: Null y Undefined Como sub-tipos
+
+- Null y Undefined se pueden asumir como subtipos de los otros tipos de datos
+- Significa que se puede asignar `null` y `undefined` a una variable de tipo `string`, por ejemplo
+
+### Tipo: Null y Undefined La opción --strictNullChecks
+
+- Solo permite asignar `null` y `undefined` a una variable de tipo `any` o a sus tipos respectivos
+- Ayuda a evitar errores comunes en programación de apps en el ámbito JavaScript
+
+#### Uso de --strictNullChecks
+
+```bash
+$ tsc --watch src/main.ts --strictNullChecks
+```
+
+ó
+
+```json
+tsconfig.json
+
+{
+  ...
+  "strict": true,
+  "strictNullChecks": true,              /* Enable strict null checks. */
+  ...
+}
+```
