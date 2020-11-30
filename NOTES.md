@@ -383,3 +383,13 @@ tsconfig.json
   ...
 }
 ```
+## Funciones en TypeScript
+
+- Los parámetros en las funciones son tipados
+- Se pueden definir parámetros opcionales
+- El tipo de retorno puede ser
+  - tipo básico
+  - enum
+  - alias
+  - tipo literal
+  - combinación de tipos
