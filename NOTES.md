@@ -321,3 +321,10 @@ tsconfig.json
 - **Object:** instancia de la clase `Object` de JavaScript
 - **object:** tipo para valores no primitivos
   - Con este tipo no se puede acceder a las propiedades del objeto
+
+## Tipo: Array
+
+- Al igual que JavaScript, TypeScript permite definir un arreglo para contener conjuntos de valores
+- Usa dos notaciones
+  - `[]`
+  - `Array<Type>`
