@@ -383,6 +383,7 @@ tsconfig.json
   ...
 }
 ```
+
 ## Funciones en TypeScript
 
 - Los parámetros en las funciones son tipados
@@ -393,3 +394,17 @@ tsconfig.json
   - alias
   - tipo literal
   - combinación de tipos
+
+## Resumen
+
+- `null` y `undefined` son subtipos de `void`
+- `null` y `undefined` son subtipos de
+  - number
+  - boolean
+  - string
+  - array
+  - tuple
+  - enum
+  - any
+  - void
+  - object

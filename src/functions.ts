@@ -29,3 +29,27 @@ function createOptionalPicture(title: string = 'Optional title', date: string = 
 }
 
 console.log('createOptionalPicture', createOptionalPicture());
+
+
+// Tipo de retorno con TypeScript
+function handleError(code: number, message: string): string | never {
+    if (message === 'error') {
+        throw new Error(`message: ${message}. Code: ${code}`);
+    } else {
+        return 'An error has ocurre';
+    }
+}
+
+try {
+    console.log('handleError', handleError(400, 'one simple error')); // string
+    console.log('handleError', handleError(404, 'error')); // never
+} catch (error) {
+    console.error(error);
+}
+
+// Utilizando funciones como parámetros
+function utilizandoFuncionComoParametro(cb:(code: number, message: string) => string | never): () => string {
+    return () => 'Hola Mundo';
+}
+
+console.log(utilizandoFuncionComoParametro(() => 'un string')());
