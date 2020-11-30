@@ -357,3 +357,29 @@ tsconfig.json
 
 - Una variable con un tipo literal puede contender unicamente una cade del conjunto
 - Se usan cadenas como *"tipos"*, combinados con el símbolo de *pipe ('|')* entre ellos
+
+## Aserciones de tipos
+
+- Cuando el programador puede conocer más que TypeScript sobre el valor de una variable
+- Es un mensaje al compilador: *"Confiá en mí, se lo que estoy haciendo"*
+- *"Convierte"* el tipo de dato
+- TypeScript no realiza ningún tipo de verificación y no afecta en absoluto al tiempo de ejecución de nuestro código
+- Se parece al casting de tipos en otros lenguajes de programación
+- Usa dos sintaxis
+  - *Angle Brackets (`<Type>`variable)*
+  - *as (variable `as` type)*
+- La prioridad es usar *as* por encima de <> desde la versión 1.6 de TypeScript debido a la ambiguedad en archivos `.jsx`
+
+### Agregar regla recomendada
+
+```json
+tsconfig.json
+
+{
+  ...
+  {
+    "no-angle-bracket-type-assertion": true
+  }
+  ...
+}
+```
