@@ -339,3 +339,21 @@ tsconfig.json
 
 - Los enumerados permiten definir un conjunto de constantes con nombre
 - Tienen la ventaja de adaptarse al contexto de la aplicación
+
+## Unión de Tipos, Alias y Tipos Literales
+
+### Unión de Tipos
+
+- En TypeScript se puede definir una variable con múltiples tipos de datos: `Union Type`
+- Se usa el símbolo de *pipe ('|')* entre los tipos
+
+### Alias de Tipos
+
+- TypeScript permite crear un alias como nuevo nombre para un tipo
+- El alias se puede aplicar también a un conjunto o combinación de tipos
+- Se usa la palabra reservada `type`
+
+### Tipos Literales
+
+- Una variable con un tipo literal puede contender unicamente una cade del conjunto
+- Se usan cadenas como *"tipos"*, combinados con el símbolo de *pipe ('|')* entre ellos
