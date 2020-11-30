@@ -310,3 +310,14 @@ tsconfig.json
   ...
 }
 ```
+
+## Tipo: object
+
+- `object` es el tipo de dato que representa un valor no primitivo
+- Es el tipo para variable que no sea number, string, boolean, null, undefined, etc.
+
+### Object vs object
+
+- **Object:** instancia de la clase `Object` de JavaScript
+- **object:** tipo para valores no primitivos
+  - Con este tipo no se puede acceder a las propiedades del objeto
