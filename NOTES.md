@@ -424,3 +424,7 @@ Establecemos una propiedad cómo opcional con el símbolo *(?)* después del nom
 Algunas de las propiedades de la interfaz podrían no ser modificables una vez creado el objeto.
 
 Esto es posible usan *readonly* antes del nombre de la propiedad.
+
+## Extendiendo Interfaces
+
+Las interfaces pueden extenderse unas de otras. Esto permite copiar los miembros ya definidos en una interfaz a otra, ganan flexibilidad y re-usabilidad de componentes.
