@@ -408,3 +408,7 @@ tsconfig.json
   - any
   - void
   - object
+
+## Interfaces
+
+Las interfaces en TypeScript constituyen una forma poderosa de definir *"contratos"* tanto para el proyecto, cómo para el código externo del mismo.
