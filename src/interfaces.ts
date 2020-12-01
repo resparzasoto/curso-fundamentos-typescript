@@ -42,3 +42,43 @@ showPicture({
     orientation: PhotoOrientation.Square,
     // extra: 'test' // error
 });
+
+interface PictureConfig {
+    title?: string,
+    date?: string,
+    orientation?: PhotoOrientation
+}
+
+function generatePicture(config: PictureConfig) {
+    const pic = { title: 'Default', date: '2020-11-30' };
+    
+    if (config.title) {
+        pic.title = config.title;
+    }
+
+    if (config.date) {
+        pic.date = config.date;
+    }
+
+    return pic;
+}
+
+let picture = generatePicture({});
+console.log('picture', picture);
+picture = generatePicture({title: 'Travel pic'});
+console.log('picture', picture);
+picture = generatePicture({title: 'Travel pic', date: '2021-01-01'});
+console.log('picture', picture);
+
+// Interface: Usuario
+interface User {
+    readonly id: number;
+    readonly username: string;
+    isPro: boolean;
+}
+
+let user: User;
+user = { id: 10, username: 'resparzasoto', isPro: true };
+console.log('user', { user });
+// user.username = 'otro user';
+console.log('user', { user });

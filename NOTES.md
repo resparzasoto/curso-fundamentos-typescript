@@ -412,3 +412,15 @@ tsconfig.json
 ## Interfaces
 
 Las interfaces en TypeScript constituyen una forma poderosa de definir *"contratos"* tanto para el proyecto, cómo para el código externo del mismo.
+
+## Interfaces Propiedades Opcionales
+
+No todas las propiedades de una interfaz podrías ser requeridas.
+
+Establecemos una propiedad cómo opcional con el símbolo *(?)* después del nombre.
+
+### Interfaces Propiedades de Solo Lectura
+
+Algunas de las propiedades de la interfaz podrían no ser modificables una vez creado el objeto.
+
+Esto es posible usan *readonly* antes del nombre de la propiedad.
