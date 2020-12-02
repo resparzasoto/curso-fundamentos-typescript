@@ -514,3 +514,23 @@ Las clases por lo general definen atributos y métodos aplicables a las instanci
 A través de la palabra reservada `static` se puede definir un miembro visible a nivel de clase.
 
 Al igual que las interfaces, podemos usar la palabra reservada `readonly` para marcar el miembro de una clase como solo lectura.
+
+## Resumen
+
+### Módulos en TypeScript
+
+Los modulos en TypeScript proveen un mecanismo para una mejor organización del código y promueven su reutilización.
+
+A partir de ECMAScript2015, los módulos son parte nativa del lenguaje JavaScript.
+
+### Importando y Exportando en Módulos
+
+Generalmente se define un módulo con la idea de agrupar código relacionado.
+
+Podemos tomar criterios en torno a la funcionalidad, features, utilitarios, modelos, etc.
+
+Los miembros del módulo interactúan con el uso de las palabras reservadas `import` y `export`.
+
+`export` exporta la definición de nuestros miembros, para que otros contextos puedan llegar a utilizarlos.
+
+`import` importa el contexto de otras definiciones de miembros, para utilizarlas en nuestro contexto actual.
