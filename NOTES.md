@@ -428,3 +428,11 @@ Esto es posible usan *readonly* antes del nombre de la propiedad.
 ## Extendiendo Interfaces
 
 Las interfaces pueden extenderse unas de otras. Esto permite copiar los miembros ya definidos en una interfaz a otra, ganan flexibilidad y re-usabilidad de componentes.
+
+## Clases
+
+### Definiendo clases y constructores
+
+A partir de ECMAScript2015 es posible construir clases y hacer uso del paradigma de la Programación Orientada a Objetos en JavaScript.
+
+TypeScript permite aplicar estas técnicas sin tener que esperar por otra versión.
