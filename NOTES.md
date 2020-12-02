@@ -472,3 +472,9 @@ tsconfig.json
   ...
 }
 ```
+
+## Métodos Get y Set
+
+### Clases Métodos Get y Set
+
+TypeScript soporta los métodos accesores set y get como una forma de interceptar los accesos a los miembros privados de un objeto.
