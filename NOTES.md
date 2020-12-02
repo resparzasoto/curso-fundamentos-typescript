@@ -478,3 +478,39 @@ tsconfig.json
 ### Clases Métodos Get y Set
 
 TypeScript soporta los métodos accesores set y get como una forma de interceptar los accesos a los miembros privados de un objeto.
+
+## Herencia de clases y propiedades estáticas
+
+### Herencia de Clases y Miembros Protegidos
+
+TypeScript soporte este patrón común en el mundo de OOP.
+
+Implementa la habilidad de extender código de clases existentes a través de la *herencia.*
+
+#### super()
+
+Permite utilizar el constructor de la super-clase heredada.
+
+#### Protected
+
+Indica un acceso intermedio, el cual no es ni public ni privado.
+
+Esto significa que un miembro protegido puede ser accedido desde la misma clase y además puede ser usada desde las subclases.
+
+### Clases Abstractas
+
+Las clases abstractas son la base de donde otras clases podrían derivarse.
+
+A diferencia de una interfaz, una clase puede implementar funciones para sus instancias.
+
+La palabra reservada utilizada es `abstract`
+
+Cuando una super-clase llega a ser demasiado general y se quiere evitar la creación de instancias de la misma podemos utilizar el concepto de clase abstracta.
+
+### Propiedades Estáticas y Propiedades de Solo Lectura
+
+Las clases por lo general definen atributos y métodos aplicables a las instancias de las mismas.
+
+A través de la palabra reservada `static` se puede definir un miembro visible a nivel de clase.
+
+Al igual que las interfaces, podemos usar la palabra reservada `readonly` para marcar el miembro de una clase como solo lectura.
