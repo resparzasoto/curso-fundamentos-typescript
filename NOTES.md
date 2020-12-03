@@ -534,3 +534,44 @@ Los miembros del módulo interactúan con el uso de las palabras reservadas `imp
 `export` exporta la definición de nuestros miembros, para que otros contextos puedan llegar a utilizarlos.
 
 `import` importa el contexto de otras definiciones de miembros, para utilizarlas en nuestro contexto actual.
+
+## Principios de responsabilidad única
+
+Idealmente, un archivo debería tener un propósito o responsabilidad única
+
+- Una clase
+- Una interfaz
+- Un enumerado
+- etc.
+
+Esto mejora la legibilidad de código, facilita su lectura, testing y favorece su mantenimiento.
+
+## Resolviendo módulos
+
+TypeScript resuelve la ubicación de módulos observando referencias relativas y no relativas.
+
+Posteriormente intenta localizar el módulo usando una *estrategia de resolución de módulos*.
+
+### Estrategia de resolución de módulos
+
+```bash
+$ tsc --moduleResolution node
+$ tsc --moduleResolution classic
+```
+
+| classic                     | node                          |
+| --------------------------- | ----------------------------- |
+| Módulos AMD, System, ES2015 | Módulos CommonJS o UMD        |
+| Poco configurable           | Más opciones de configuración |
+
+```json
+tsconfig.json
+
+{
+  ...
+  "module": "<valor>", // la estrategia de generación de módulos que utilizará
+  "moduleResolution": "node", // la estrategia a implementar para la resolución de módulos
+  "traceResolution": true, // nos indicará la traza de la resolución de módulos
+  ...
+}
+```
