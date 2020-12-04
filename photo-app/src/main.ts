@@ -1,9 +1,9 @@
 // import { Album, PhotoOrientation, Picture, User } from "./photo-app";
 
-import { Album } from "./src/album";
-import { PhotoOrientation } from "./src/photo-orientation";
-import { Picture } from "./src/picture";
-import { User } from "./src/user";
+import { Album } from "./album";
+import { PhotoOrientation } from "./photo-orientation";
+import { Picture } from "./picture";
+import { User } from "./user";
 
 const user = new User(1, 'resparzasoto',  'rubén', true);
 const album = new Album(1, 'example album');

@@ -575,3 +575,64 @@ tsconfig.json
   ...
 }
 ```
+
+## Webpack y agrupación de Módulos
+
+Webpack es un empaquetador de módulos *"bundler"* que permite la integración con diferentes plugins o herramientas adicionales de configuración.
+
+### Instalación de TypeScript y Webpack
+
+```bash
+$ npm install typescript webpack webpack-cli --save-dev
+```
+
+### Configuración de Webpack
+
+```javascript
+webpack.config.js
+
+module.exports = {
+    mode: 'production',
+    entry: './src/main.ts',
+    devtool: 'inline-source-map',
+    module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            }
+        ]
+    },
+    resolve: {
+        extensions: ['.ts', '.js'],
+    },
+    output: {
+        filename: 'bundle.js'
+    }
+}
+```
+
+### Integración de código TypeScript con Webpack
+
+```bash
+$ npm install ts-loader --save-dev
+```
+
+```javascript
+webpack.config.js
+
+{
+  ...
+  module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            }
+        ]
+    },
+    ...
+}
+```
